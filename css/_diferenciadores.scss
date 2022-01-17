@@ -1,0 +1,37 @@
+/***Diferenciadores***/
+
+.dif-conteiner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+    div {
+        width: 43%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 10px;
+        p {
+            display: inline-block;
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+    .sello {
+        height: 30px;
+        margin: 0;
+        img{
+            /*filter: invert(100%); si es que se usa fondo negro*/
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .dif-conteiner {
+        div {
+            width: auto;
+        }
+    }
+}

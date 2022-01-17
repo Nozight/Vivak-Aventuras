@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Dunas de Taton</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Dudas de Taton y Termas<br><span>Sentirse en el Sahara estando en Catamarca</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">Tatón es una localidad de Tinogasta, se encuentra al Norte de la misma, a 100km. Es cerca de esta localidad, donde se encuentran las famosas dunas de Medanitos, donde muchos practican Sandboard y se corre el Rally Dakar. Características
+                    Ubicadas en las cercanías del pequeño pueblo de Tatón, se encuentra este mar de dunas majestuosas, es la más alta de todo el mundo: posee 1.230 metros. Su base está a 1.615 metros sobre el nivel del mar y su cima a 2.845 metros. Es
+                    casi un 30% más elevada que la que le sigue, la “Duna Grande”, que se alza en Ica, Perú. Sin embargo, la totalidad de esta formación geológica es impresionante. Tanto, que sus dunas fueron calificadas por el geólogo Alfred Stelzner
+                    como “glaciares de arena”. En Tatón hay más arena que tierra, las montañas están cerca del pueblo, y abundan tanto los ríos como las plantas y los duraznos por lo que cada 21 de marzo se festeja el Festival del Durazno y el 8 de diciembre
+                    el día de la Virgen con una procesión muy pintoresca . La temperatura ambiente por las noches es baja debido a su nivel sobre el mar y muy elevadas durante el día. Población Cuenta con 301 habitantes La zona del Oeste provincial es
+                    una de las más visitadas, tanto por turistas de Argentina como de todo el mundo, debido a los increíbles paisajes que existen en toda la zona, con todo lo que nos brinda la puna y la pre-puna.(precordillera) En dirección a la cordillera
+                    se llega a Medanitos, un pueblo rodeado de viñedos y más allá dunas. Saliendo de Medanitos se entra a la nada misma y de verdad parece que uno está en el desierto.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide taton-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide taton-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide taton-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+
+                    <div class="day-conteiner">
+                        <h4>Sábado</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Salida desde Córdoba</strong><br> Partimos el sabado de madrugada para aprovechar el dia</li>
+                            <li><i class="fas fa-snowboarding"></i><strong> Sandboard</strong> <br> Tras llegar, almorzaremos y luego iremos a realizar Sandboard</li>
+                            <li><i class="fas fa-eye"></i><strong> Visitamos Cristo Redentor</strong> <br> Increible vista de las Dunas y sus viñedos de altua</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking por las Dunas</strong><br> Pequeño trekking por las mismas, sentiremos la sensasión de estar en pleno desierto viendo el atardecer </li>
+                            <li><i class="fas fa-moon"></i><strong> Vivac</strong><br> Tras cenar, dormieroms sobre un manto de estrellas nunca antes visto</li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Domingo</h4>
+                        <ul>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking por San Francisco</strong><br> El día domingo luego de desayunar caminaremos de regreso hasta el vehículo e iremos por el camino al Paso de San Francisco donde realizaremos un
+                                trekking, allí conoceremos el <strong>Paraje Loro Huasi, Cañon del Indio, Bosque Petrificado y Lomos de Dinosaurios</strong>, este último es donde armaremos las carpas , veremos el atardecer , cenaremos y dormiremos bajo
+                                el manto de estrellas
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Lunes</h4>
+                        <ul>
+                            <li><i class="fas fa-hot-tub"></i><strong> Visitamos las Termas</strong><br> luego de desayunar nos encaminamos a los vehículos e iremos a las Termas donde pasaremos una jornada de relax antes de retornar a Córdoba
+                            </li>
+                            <li><i class="fas fa-bus"></i><strong> Retornamos a Córdoba</strong><br> Iniciamos retorno hacia Córdoba Capital</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Baja/media</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: Sábado 4 hs AM</p>
+                <p>Regreso: Domingo 22 hs PM aprox.</p>
+                <p>Lugar de partida y regreso: Plaza Velez Sarsfield (Frente Patio Olmos)</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta</li>
+                    <li>Pensión completa ( no incluye bebidas ni comida de marcha)</li>
+                    <li>Carpas</li>
+                    <li>Tablas para realizar Sandboard</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Mochila mediana/grande</li>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Zapatillas</li>
+                    <li>Rompeviento</li>
+                    <li>Campera o polar</li>
+                    <li>Linterna</li>
+                    <li>2 Par de medias extra</li>
+                    <li>Protector solar</li>
+                    <li>Gorra y Lentes</li>
+                    <li>Equipo mate ( quien lo deseé )</li>
+                    <li>Comida de marcha, snacks y 2 litros de agua mínimo </li>
+                    <li>Elementos higiene personal</li>
+                    <li>Bolsa de dormir ( en caso de no poseer, consultar con nosotros )</li>
+                    <li>Medicación personal (si alguien la necesitara)</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>

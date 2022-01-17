@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Saltos del Moconá, Aventura en Plena Selva</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>RSaltos del Moconá, Aventura en Plena Selva<br><span>Parque Provincial Moconá</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">El Parque Provincial Moconá se encuentra dentro de la Reserva de la Biosfera Yabotí (“tortuga” en guaraní), en la región centro este de Misiones, ocupando una superficie aproximada de 253.773 has. En el corazón del parque, los Saltos del Moconá conforman un espectáculo único en el mundo, producto de una falla geológica sobre el río Uruguay, entre las desembocaduras de los arroyos Pepirí Guazú y Yabotí  (del lado Argentino).
+
+                    Recorrer los senderos y picadas permite descubrir a cada paso, cómo conviven armoniosamente una espesa vegetación, con abundante presencia de helechos arborescentes, matas de tacuara y añosos árboles.
+                    Se encuentran también variedades de aves, mamíferos, peces y anfibios, en un espacio convertido en uno de los últimos refugios para la fauna representada por las grandes aves de la selva y los grandes mamíferos, como el yaguareté.
+                    
+                    El Gran Salto del Moconá, “El que todo lo traga”, como reza su denominación en lengua guaraní, es un cañón de 1900 metros de largo con caídas de agua paralelas a su cauce.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide saltos-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide saltos-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide saltos-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+                    <!--
+                    <div class="day-conteiner">
+                        <h4>Viernes</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i>Salida desde Córdoba</li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Sabado</h4>
+                        <ul>
+                            <li><i class="fas fa-truck-monster"></i></i><strong> Excursion en 4x4</strong> <br> Bien temprano, luego de desayunar, salimos hacía el balcón del pissis y sus lagunas en camionetas adaptadas, con un guía por cada vehiculo.
+                                <br> Vamos a ver el
+                                <strong>Volcan Pissis</strong> y, en su base, las <strong>Lagunas Turquesa, Verde y Negra</strong>, todas desde la misma ubicación</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking (opcional)</strong><br> Al regreso haremos un pequeño trek por el cañón del indio. <br> Retorno al atardecer para cenar y descansar
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Domingo</h4>
+                        <ul>
+                            <li><i class="fas fa-car-side"></i><strong>Visitamos las termas</strong><br> Luego del desayuno visitaremos las termas dónde disfrutaremos medio día sus <strong>aguas termales</strong></li>
+                            <li><i class="fas fa-bus"></i><strong> Retorno a Córdoba</strong></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Media/Baja</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: (dia?) XX hs AM</p>
+                <p>Regreso: (dia?) XX hs PM aprox.</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta ( 3.000 km )</li>
+                    <li>Excursiones</li>
+                    <li>Lodge en plena Selva  con agua caliente y ropa blanca</li>
+                    <li>Pensión completa ( no incluye bebidas )</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Mochila grande</li>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Zapatillas</li>
+                    <li>2/3 Muda de ropa extra</li>
+                    <li>Campera de abrigo</li>
+                    <li>Rompeviento</li>
+                    <li>Gorra y Lentes de sol ( impresindible )</li>
+                    <li>Cuellitos (buff)</li>
+                    <li>Equipo mate (quien lo deseé)</li>
+                    <li>Comida de marcha y para el viaje, snacks </li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>

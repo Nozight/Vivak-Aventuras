@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,600;1,300&family=Lobster&family=Raleway:ital,wght@1,100;1,200;1,300;1,900&display=swap');
+.hero {
+    height: 400px;
+    background: center url(../assets/backgrounds/hero1.jfif) no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    div {
+        display: flex;
+        align-items: flex-start;
+        h1 {
+            margin: 20px 0;
+            display: inline-block;
+            color: white;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Lobster', cursive;
+            font-family: 'Raleway', sans-serif;
+            text-shadow: 2px 2px 3px black;
+        }
+    }
+}
+
+

@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;600&family=Lobster&family=Raleway:ital,wght@1,100;1,200;1,300;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,600;1,300&family=Lobster&family=Raleway:ital,wght@1,100;1,200;1,300;1,900&display=swap");
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 5px;
+}
+
+header {
+  color: var(--violeta);
+  top: 0px;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 99;
+  box-shadow: 0px 1px 7px 0px #000000;
+}
+header div {
+  margin: 5px 10px 5px 10px;
+  height: 60px;
+}
+header #logo {
+  content: url(../assets/brand-logos/logo-face-nobg1.png);
+}
+@media screen and (min-width: 768px) {
+  header div {
+    height: 60px;
+  }
+  header #logo {
+    content: url(../assets/brand-logos/logo-vivak-nobg.png);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    top: 70px;
+  }
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu li {
+  color: white;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin: 15px 40px;
+  font-size: 20px;
+}
+
+.scale-in-ver-top {
+  -webkit-animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both, scale-out-ver-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both, scale-out-ver-top 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.close-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 35px;
+  font-size: 20px;
+  color: white;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.slider-container {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.dots {
+  position: absolute;
+  left: 0;
+  z-index: 90;
+  width: 100%;
+  bottom: 0;
+}
+
+.dots label {
+  cursor: pointer;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 0.2em 1em;
+}
+.dots label:hover {
+  background: red;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: left 0s 0.75s;
+}
+
+[id^=slide]:checked + .slide {
+  left: 0;
+  z-index: 89;
+  transition: left 0.65s ease-out;
+}
+
+.balcon-1 {
+  background-image: url(../assets/destinos/balcon-pissis/1.jpeg);
+}
+
+.balcon-2 {
+  background-image: url(../assets/destinos/balcon-pissis/2.jpeg);
+}
+
+.balcon-3 {
+  background-image: url(../assets/destinos/balcon-pissis/3.jpeg);
+}
+
+.corral-1 {
+  background-image: url(../assets/destinos/balcon-pissis/1.jpeg);
+}
+
+.corral-2 {
+  background-image: url(../assets/destinos/balcon-pissis/2.jpeg);
+}
+
+.corral-3 {
+  background-image: url(../assets/destinos/balcon-pissis/3.jpeg);
+}
+
+.trip-presentation {
+  margin: 10px 0;
+}
+.trip-presentation .flex {
+  display: flex;
+  justify-content: center;
+}
+.trip-presentation .flex .descBtn {
+  padding: 3px;
+  width: 90%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.808);
+  border: none;
+  border-radius: 2px;
+}
+.trip-presentation .flex .descBtn i {
+  margin: 3px;
+}
+.trip-presentation h1 {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 5px;
+}
+.trip-presentation h1 span {
+  font-size: 20px;
+}
+.trip-presentation .hidden {
+  display: none;
+}
+
+.trip-info {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .trip-info {
+    display: grid;
+    grid-template-areas: "dificultad programa" "horarios programa" "incluye programa" "no-incluye programa" "equipo programa";
+  }
+}
+.trip-info h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  margin: 5px;
+}
+.trip-info h4 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+.trip-info div {
+  margin: 25px 10px;
+}
+.trip-info .programa {
+  grid-area: programa;
+}
+.trip-info .programa .activities-conteiner .day-conteiner ul li {
+  margin: 10px 0;
+}
+.trip-info .dificultad {
+  grid-area: dificultad;
+}
+.trip-info .horarios {
+  grid-area: horarios;
+}
+.trip-info .incluye {
+  grid-area: incluye;
+}
+.trip-info .no-incluye {
+  grid-area: no-incluye;
+}
+.trip-info .equipo {
+  grid-area: equipo;
+}
+
+.hero {
+  height: 400px;
+  background: center url(../assets/backgrounds/hero1.jfif) no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+}
+.hero div {
+  display: flex;
+  align-items: flex-start;
+}
+.hero div h1 {
+  margin: 20px 0;
+  display: inline-block;
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Lobster", cursive;
+  font-family: "Raleway", sans-serif;
+  text-shadow: 2px 2px 3px black;
+}
+
+/***Diferenciadores***/
+.dif-conteiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+.dif-conteiner div {
+  width: 43%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+.dif-conteiner div p {
+  display: inline-block;
+}
+.dif-conteiner div i {
+  font-size: 20px;
+}
+.dif-conteiner .sello {
+  height: 30px;
+  margin: 0;
+}
+.dif-conteiner .sello img {
+  /*filter: invert(100%); si es que se usa fondo negro*/
+}
+
+@media screen and (min-width: 768px) {
+  .dif-conteiner div {
+    width: auto;
+  }
+}
+.wsp-btn {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 60px;
+  margin: 10px;
+  z-index: 10;
+}
+
+.destinos {
+  background: #fecf00;
+  background: linear-gradient(63deg, #fecf00 73%, #ff8700 100%);
+  padding-bottom: 20px;
+}
+.destinos h2 {
+  color: white;
+  padding: 7px 7px 5px 15px;
+  font-size: 25px;
+  background: black;
+  background: linear-gradient(140deg, black 0%, #3c2000 73%, #ff8700 100%);
+}
+.destinos .cards-conteiner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.destinos .cards-conteiner .card {
+  color: black;
+  width: 95%;
+  margin: 12px 0px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 8px 1px rgba(0, 0, 0, 0.75);
+  overflow: hidden;
+}
+.destinos .cards-conteiner .card:hover {
+  transform: scale(1.01);
+}
+@media screen and (min-width: 768px) {
+  .destinos .cards-conteiner .card {
+    width: 47.5%;
+  }
+}
+.destinos .cards-conteiner .card .imgs-display {
+  display: flex;
+  height: 100px;
+  justify-content: stretch;
+}
+@media screen and (min-width: 426px) {
+  .destinos .cards-conteiner .card .imgs-display {
+    height: 120px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .destinos .cards-conteiner .card .imgs-display {
+    height: 150px;
+  }
+}
+.destinos .cards-conteiner .card .imgs-display div {
+  box-shadow: 8px 0px 10px -4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 8px 0px 10px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 8px 0px 10px -4px rgba(0, 0, 0, 0.75);
+}
+.destinos .cards-conteiner .card .imgs-display div img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.destinos .cards-conteiner .card .card-info {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.destinos .cards-conteiner .card .card-info h3 {
+  margin: 0;
+}
+.destinos .cards-conteiner .card .card-info a {
+  align-self: flex-end;
+}
+.destinos .cards-conteiner .card .card-info .flex-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.destinos .cards-conteiner .card .card-info .flex-wrap .ver-mas {
+  display: flex;
+  justify-content: flex-end;
+}
+.destinos .cards-conteiner .card .card-info .flex-wrap .ver-mas button {
+  font-size: 15px;
+  color: #753104;
+  padding: 7px 7px 7px 14px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #ff8700;
+  border: none;
+  cursor: pointer;
+}
+.destinos .cards-conteiner .card .card-info .flex-wrap .ver-mas button i {
+  margin-left: 5px;
+}
+.destinos .cards-conteiner .card .card-info .flex-wrap > * {
+  flex: 1 1 160px;
+}
+
+#balcon-1 {
+  width: 60%;
+  background: center url(../assets/destinos/balcon-pissis/1.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+#balcon-2 {
+  width: 20%;
+  background: center url(../assets/destinos/balcon-pissis/2.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+#balcon-3 {
+  width: 20%;
+  background: center url(../assets/destinos/balcon-pissis/3.jpeg) no-repeat;
+  background-size: cover;
+}
+
+#talampaya-1 {
+  width: 60%;
+  background: center url(../assets/destinos/talampaya/1.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+#talampaya-2 {
+  width: 20%;
+  background: center url(../assets/destinos/talampaya/2.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+#talampaya-3 {
+  width: 20%;
+  background: center url(../assets/destinos/talampaya/4.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+#yungas-1 {
+  width: 60%;
+  background: center url(../assets/destinos/yungas/1.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+#yungas-2 {
+  width: 20%;
+  background: center url(../assets/destinos/yungas/2.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+#yungas-3 {
+  width: 20%;
+  background: center url(../assets/destinos/yungas/3.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+#taton-1 {
+  width: 60%;
+  background: center url(../assets/destinos/dunas-taton/1.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+#taton-2 {
+  width: 20%;
+  background: center url(../assets/destinos/dunas-taton/2.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+#taton-3 {
+  width: 20%;
+  background: center url(../assets/destinos/dunas-taton/3.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+footer {
+  color: white;
+  background: #131d13;
+  box-shadow: 0px 9px 12px -5px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 0px 9px 12px -5px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 0px 9px 12px -5px rgba(0, 0, 0, 0.75) inset;
+}
+footer h3 {
+  color: white;
+  font-size: 30px;
+  margin: 10px 0 10px 0px;
+}
+footer .contactos {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 10px 10px;
+  font-size: 20px;
+}
+@media screen and (min-width: 426px) {
+  footer .contactos {
+    padding-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+footer .contactos div {
+  width: 270px;
+}
+footer .contactos div .contact-wrapper {
+  display: flex;
+  align-items: center;
+}
+footer .contactos div .contact-wrapper span {
+  font-size: 15px;
+  margin: 5px 5px;
+  color: var(--violeta);
+}
+footer .contactos div .black {
+  color: black;
+}
+@media screen and (min-width: 426px) {
+  footer .contactos div .black {
+    color: white;
+  }
+}
+footer .copyright {
+  padding-top: 15px;
+  color: #868585;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

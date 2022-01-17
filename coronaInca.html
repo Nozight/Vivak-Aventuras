@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Corona del Inca y Laguna Brava</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Corona del Inca y Laguna Brava<br><span>La Rioja</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">Consideradas una de las excursiones más extremas del mundo, esta verdadera aventura en 4×4 alcanza alturas próximas a los 5600 msnm. en el techo de Los Andes.
+                    El Cráter Corona del Inca se ubica en el faldeo del Monte Pissis 6912 msnm, allí alberga en sus 6 km de diámetro la laguna “Inca Pillo” (5350 msnm) donde se obtuvo el récord mundial de navegación y buceo en altura. La misma tiene aprox. 2 km de diámetro y una profundidad de 300 mtrs. Alrededor acompañan el paisaje “Los Seismiles”: Bonete Chico, Veladero, Bonete Grande, Reclus, etc. y las maravillosas lagunas: “La Brava”, “Mulas Muertas” o “La Verde”.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide corona-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide corona-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide corona-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa(Checkear)</h3>
+                <p>3 Dias, 2 Noches</p>
+                <div class="activities-conteiner">
+
+                    <div class="day-conteiner">
+                        <h4>Dia 1</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Salida desde Córdoba</strong><br> Partimos de medianoche para llegar a las 15/16 hs aprox.</li>
+                            <li><i class="fas fa-eye"></i><strong> Estrellas Diaguitas</strong> <br> Una vez instalados, visitaremos las misteriosas Estrellas Diaguitas que representan a los pueblos originarios de la provincia, una combinación de formaciones circulares de piedras con colores blancas, rojizas, y azules.</li>
+                            <li><i class="fas fa-eye"></i><strong> Quebrada de la Troya</strong> <br> Luego iremos  hacia la impactante Quebrada de la Troya, un camino zigzagueante rodeados de llamativas geoformas y el bosque petrificado  que son producto de hace millones de años</li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Dia 2</h4>
+                        <ul>
+                            <li><i class="fas fa-truck-monster"></i><strong> Quebrada de Troya</strong><br> Tras desayunar, partimos bien temprano a internarnos en la espectacular Quebrada de la Troya, recorriendo un camino de corniza a la vera del Rio del mismo nombre serpenteando entre imponentes plegamientos y fracturas de la corteza terrestre</li>
+                            <li><i class="fas fa-truck-monster"></i><strong> Quebrada del Peñón</strong><br> Luego comenzamos el ascenso a la Cordillera por la multicolor Quebrada del 
+                                Peñón, cambiando el paisaje y sorprendiéndonos a la vuelta de cada curva iremos encontrando tropillas de vicuñas y guanacos que bajan a pastar en las vegas de la quebrada. </li>
+                            <li><i class="fas fa-truck-monster"></i><strong> Refugios Mitre y Sarmiento</strong><br> Visitaremos  y conoceremos la historia de los emblemáticos Refugios Mitre y Sarmiento. </li>
+                            <li><i class="fas fa-eye"></i><strong> Mirador Azul</strong> <br> A continuacion pararemos en el mirador azul a 4.100 msnm , veremos muchos flamencos, ya que en esta época del año van hasta allí para aparearse  y tener sus crías.En tanta inmensidad y soledad  también hay leyendas como la del Destapadito, en el refugio Laguna Brava, allí se encuentra una antigua tumba de un arriero, afectado por el mal de altura y sorprendido por las heladas nevadas del temible viento blanco</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking hasta el Crater?</strong> <br> De alli en adelante treparemos la cordillera hasta llegar al Cráter.</li>
+                            <li><i class="fas fa-eye"></i><strong> Estrellas Diaguitas</strong> <br> Ya  regresando pasaremos por las estrellas Diaguitas, (pueblos originarios) sitio ritual cruzando el Rio Vinchina o Bermejo y para luego llegar al caer el sol a Vinchina.</li>
+                            <p>(el trayecto puede ser modificado por condiciones climáticas)</p>
+                            </ul>
+                    </div> 
+                    <div class="day-conteiner">
+                        <h4>Dia 2</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Regreso a Córdoba</strong><br> Tras desayunar, retornamos camino a Córdoba por la Cuesta del Miranda y Los Colorados.</li>
+                    </ul>
+                    </div> 
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Media</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: (dia?) 00 hs AM</p>
+                <p>Regreso: (dia?) ?? hs PM aprox.</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Pension completa( no incluye bebidas ,ni comida de marcha)</li>
+                    <li>Hostería con pileta, TV, Wifi, agua caliente y ropa blanca</li>
+                    <li>Traslado ida y vuelta ( 2500 km )</li>
+                    <li>Camionetas 4x4</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Mochila mediana</li>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Zapatillas</li>
+                    <li>2 Mudas de ropa extra</li>
+                    <li>1 Par de medias extra</li>
+                    <li>Protector solar</li>
+                    <li>Abrigo ( campera de abrigo, rompeviento , polar y remera térmica)</li>
+                    <li>Gorra y Lentes de sol ( impresindible )</li>
+                    <li>Cuellitos (buff)</li>
+                    <li>Equipo mate ( quien lo deseé )</li>
+                    <li>Comida de marcha y viaje (frutas, barra de cereal, turrones, etc.) </li>
+                    <li>Medicación personal (si alguien la necesitara)</li>
+                    <li>Elementos de higiene personal.</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>

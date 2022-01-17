@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Balcón de Piscis</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Balcón del Pissis + Cañón del Indio + Termas de Fiambalá<br><span>Desafío de altura por la Ruta de los Seismiles</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">Nos aventuramos por la segunda zona más alta del mundo después del Himalaya, entre páramos, lagunas de colores y picos de más de 6.000 msnm.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide balcon-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide balcon-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide balcon-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+
+                    <div class="day-conteiner">
+                        <h4>Viernes</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Salida desde Córdoba</strong></li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Sabado</h4>
+                        <ul>
+                            <li><i class="fas fa-truck-monster"></i></i><strong> Excursion en 4x4</strong> <br> Bien temprano, luego de desayunar, salimos hacía el balcón del pissis y sus lagunas en camionetas adaptadas, con un guía por cada vehiculo.
+                                <br> Vamos a ver el
+                                <strong>Volcan Pissis</strong> y, en su base, las <strong>Lagunas Turquesa, Verde y Negra</strong>, todas desde la misma ubicación</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking (opcional)</strong><br> Al regreso haremos un pequeño trek por el cañón del indio. <br> Retorno al atardecer para cenar y descansar
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Domingo</h4>
+                        <ul>
+                            <li><i class="fas fa-car-side"></i><strong>Visitamos las termas</strong><br> Luego del desayuno visitaremos las termas dónde disfrutaremos medio día sus <strong>aguas termales</strong></li>
+                            <li><i class="fas fa-bus"></i><strong> Retorno a Córdoba</strong></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Baja, apta para todos</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: viernes 12 hs en punto</p>
+                <p>Regreso: domingo 22 hs. Aprox. ya en Córdoba</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta</li>
+                    <li>Pensión completa ( no incluye bebidas )</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Excursión en 4x4 con guías en cada camioneta</li>
+                    <li>Entrada a las termas</li>
+                    <li>2 noches en hosteleria</li>
+                </ul>
+            </div>
+            <div class="no-incluye">
+                <h3>No incluye</h3>
+                <ul>
+                    <li>Bebidas en la pension</li>
+                    <li>Comida de marcha para los dos dias</li>
+                    <li>Comida para el viaje</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Mochila mediana</li>
+                    <li>Zapatillas</li>
+                    <li>2 mudas de ropa extra</li>
+                    <li>Rompeviento</li>
+                    <li>Campera o polar</li>
+                    <li>Lentes de sol</li>
+                    <li>Gorra</li>
+                    <li>Protector solar</li>
+                    <li>2 litros de agua <strong>minimo</strong></li>
+                    <li>Elementos de higiene personal</li>
+                    <li>Comida de marcha</li>
+                    <li>Equipo de mate ( quien lo desee )</li>
+                    <li>Medicamentacion personal ( en caso de necesitarla )</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+</body>
+
+</html>
+
+</html>

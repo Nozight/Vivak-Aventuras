@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Campo de Piedra Pomez</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Campo de Piedra Pomez, Las Papas + Termas los Hornos<br><span>Fiambala</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">Se trata de un verdadero parque de esculturas naturales, pero hecho de inusual piedra pómez. La baja presión atmosférica y la menor dilución de oxígeno en el aire de esta maravilla crean el típico ambiente puneño, lo que ayuda a que su
+                    espectacularidad tenga algo de un sueño. Se encuentra en el departamento Antofagasta de la Sierra y parece un campo de juegos gigante para adultos. La región del noroeste de la provincia de Catamarca, dónde está es un área de intenso
+                    vulcanismo. Se formó hace cien mil años como resultado de las emisiones de volcanes los cercanos, especialmente el volcán Blanco o Robledo. Según algunas investigaciones científicas, la formación de la cuenca podría haberse producido
+                    por eventos eruptivos ocurridos desde 20 millones hasta 10 mil años atrás. Pero lo importante es la visión de un mar blanco congelado y, a la vez, ingrávido que sorprende a quienes los visitan y les hacen exclamar cosas como el paisaje
+                    más exótico y deslumbrante que jamás haya visto, único en el Planeta Tierra. Cubre una superficie de 75.489 hectáreas, con alturas que van de los 3050 msnm a lis 4850 msnm.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide pomez-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide pomez-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide pomez-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+
+                    <div class="day-conteiner">
+                        <h4>Sábado</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Salida desde Córdoba</strong><br> Salimos de Córdoba 5am del día sábado, llegamos a Fiambalá , recorremos el lugar, cenamos y descansamos en hostería</li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Domingo</h4>
+                        <ul>
+                            <li><i class="fas fa-car-side"></i><strong> Viajamos a la localidad de Papas</strong><br> Luego del desayuno salimos desde Fiambalá a las 7 am pasando por la localidad de Palo Blanco, Punta del Agua y luego nos dirigimos a la localidad
+                                de Papas , todo por el rio el cual lo cruzaremos unas 60 veces aproximadamente, con diferentes paisajes</li>
+                            <li><i class="fas fa-hot-tub"></i><strong> Visitamos las aguas termales</strong><br> Una vez llegados a la localidad de las papas y un breve descanso continuamos camino al Campo de Piedra Pómez pasando por aguas termales donde
+                                nos podremos sumergir en ellas con una vista privilegiada de las montañas.</li>
+                            <li><i class="fas fa-eye"></i><strong> Campo de Piedra Pomez</strong><br>Arribamos al Campo de Piedra Pómez, donde podremos disfrutar de ese paisaje único en el mundo. Luego retornaremos hacia Fiambalá pasando por la laguna de
+                                nombre <strong>La Lagunilla</strong> y retomaremos el camino anteriromente realizado, antes de cenar y descansar. </li>
+                        </ul>
+                    </div>
+                    <div class="day-conteiner">
+                        <h4>Lunes</h4>
+                        <ul>
+                            <li><i class="fas fa-hot-tub"></i><strong> Visitamos las aguas termales</strong><br> Luego del desayuno, nos iremos a disfrutar de las termas antes de regresar a Córdoba</li>
+                            <li><i class="fas fa-bus"></i><strong> Retorno a Córdoba</strong><br> Inciamos el retorno hacia Córdoba</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Baja</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: Sábado 5 hs AM</p>
+                <p>Regreso: Lunes 23 hs PM aprox.</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta (2500 km )</li>
+                    <li>Pensión completa, 2 noches en posta ( no incluye bebidas ni comida de marcha)</li>
+                    <li>Hospedaje con ropa blanca y agua caliente</li>
+                    <li>Excursión en 4x4 con guía en cada camioneta</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Mochila mediana</li>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Zapatillas</li>
+                    <li>2 Mudas de ropa extra</li>
+                    <li>Campera de abrigo o polar</li>
+                    <li>Rompeviento</li>
+                    <li>Medias extra</li>
+                    <li>Remera termica</li>
+                    <li>Cuellitos ( buff )</li>
+                    <li>Gorra y Lentes de sol ( imprescindible )</li>
+                    <li>Equipo mate ( quien lo deseé )</li>
+                    <li>Comida de marcha y para el viaje, snacks y 2 litros de agua mínimo </li>
+                    <li>Elementos higiene personal</li>
+                    <li>Medicación personal (si alguien la necesitara)</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>

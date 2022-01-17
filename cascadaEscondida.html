@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Cascada Escondida</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Rio Subterraneo y Cascada Escondida<br><span>La Cumbrecita, Rio Wildbach</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">Después de dos horas de caminata desde La Cumbrecita, se llega a un lugar muy apreciado por los turistas. Quedó en el noveno puesto entre las Maravillas Naturales.
+                    La Cumbrecita. Este “pueblo peatonal” del valle de Calamuchita es un sitio propicio para disfrutar tanto de jornadas apacibles y contemplativas, como de experiencias más vivenciales para interactuar con la naturaleza. Si uno quiere encaramarse en alguna aventura, hay varias recomendables. Sumergirse en un río subterráneo es una de ellas.
+                 
+                    La caminata comienza en el centro del pueblo, bordeando el arroyo y revalorizando los tabaquillos en extinción, que se encuentran en el camino. De a poco, se comienza a subir unos metros más de los 1400 metros sobre el nivel del mar en que se encuentra el pueblito. Un bosque de abedules que se deja atrás, y ya la roca despojada, marca el ascenso más duro, hasta los 1715 metros de la cima del monte Wank. 
+                 
+                    Atravesando piedras, como en un laberinto, se llega al río encajonado en una galería de piedras, que deja entrever la luz por un par de lugares. Imposible no sentirse Indiana Jones en alguna de sus aventuras, pero en un rincón del cordón de las Sierras Grandes, en el Valle de Calamuchita.
+                 
+                    Precisó que el río subterráneo se encuentra sobre el arroyo Wildbach (“arroyo salvaje”, según se significado), que desemboca en el arroyo Almbach (“arroyo de las pampas o de aguas tranquilas”) casi llegando al pueblo, y a su vez desemboca en el río del Medio que culmina en el dique Los Molinos”.
+                 
+                   Tiene un recorrido de casi dos mil metros, en los que va intercalando sectores subterráneos y otros emergentes y con gran calma. “Uno no se imagina que se trata del mismo río”. Hay unos 700 metros subterráneos, en tres tramos que pueden explorarse de diferentes maneras.
+                 
+                   El Wildbach nace a casi 1900 metros sobre el nivel del mar en las altas cumbres y a los 1750 se hace subterráneo formando las cascadas gemelas, un salto donde dos torrentes de agua se juntan y van a parar al fondo de una gran grieta, allí el río desaparece y comienza su recorrido tan singular por debajo de enormes piedras.
+                 
+                    “Este tipo de río montañoso, al presentar un gran desnivel en un corto tramo, tiene un poder erosivo muy grande, más aun con las grandes crecidas que se dan en épocas de lluvias.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide cascada-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide cascada-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide cascada-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+<!--
+                    <div class="day-conteiner">
+                        <h4>Sábado</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Salida desde Córdoba</strong><br> Partimos el sabado de madrugada para aprovechar el dia</li>
+                            <li><i class="fas fa-snowboarding"></i><strong> Sandboard</strong> <br> Tras llegar, almorzaremos y luego iremos a realizar Sandboard</li>
+                            <li><i class="fas fa-eye"></i><strong> Visitamos Cristo Redentor</strong> <br> Increible vista de las Dunas y sus viñedos de altua</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking por las Dunas</strong><br> Pequeño trekking por las mismas, sentiremos la sensasión de estar en pleno desierto viendo el atardecer </li>
+                            <li><i class="fas fa-moon"></i><strong> Dormir bajo las estrellas</strong><br> Tras cenar, dormieroms sobre un manto de estrellas nunca antes visto</li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Domingo</h4>
+                        <ul>
+                            <li><i class="fas fa-car-side"></i><strong>Visitamos las termas</strong><br> Luego de desayunar caminaremos de regreso hasta el vehículo bien temprano, ya que por las temperaturas luego es muy difícil caminar e iremos a visitar
+                                las Termas y disfrutar un merecido descanso en las <strong>aguas termales</strong></li>
+                            <li><i class="fas fa-bus"></i><strong> Retorno a Córdoba</strong><br> Tras almorzar, inciamos el retorno hacia Córdoba</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Media</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: (dia?) 7 hs AM</p>
+                <p>Regreso: (dia?) 21 hs PM aprox.</p>
+                <p>Lugar de partida y regreso: Plaza Velez Sarsfield (Frente Patio Olmos)</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta</li>
+                    <li>Logística</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Mochila mediana</li>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Zapatillas deportivas o que puedan mojarse</li>
+                    <li>Bastones de trekking ( opcional )</li>
+                    <li>1 Muda de ropa extra</li>
+                    <li>1 Par de medias extra</li>
+                    <li>Protector solar</li>
+                    <li>Abrigo ( rompeviento y/o campera liviana, dependiendo pronóstico)</li>
+                    <li>Gorra y Lentes</li>
+                    <li>Lintera</li>
+                    <li>Bolsa para poner ropa mojada dentro (ya que nos meteremos al rio)</li>
+                    <li>Equipo mate ( quien lo deseé )</li>
+                    <li>Comida de marcha (frutas, barra de cereal, turrones, etc.) </li>
+                    <li>Medicación personal (si alguien la necesitara)</li>
+                    <li>ALMUERZO INCLUIDO(EN EL PAQUETE O SE NECESITA LLEVAR?)</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>

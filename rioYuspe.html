@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Rio Yuspe, cascada La Familia y Las Cuchillas</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Rio Yuspe, cascada La Familia y Las Cuchillas<br><span>Los Gigantes, Córdoba</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">El Río Yuspe es un importante río de la provincia de Córdoba y el más largo, que se encuentra en la zona serrana, cuya naciente se ubica en la región Norte de la Pampa de Achala, más exactamente en la región del macizo conocido como Los
+                    Gigantes. De características endorreicas, este río es, junto al río Carnero el principal afluente del Río Cosquín, el Río Cosquín desemboca por el extremo norte en el lago San Roque, luego formando el conocido río Suquía o río Primero.
+                    El curso del Yuspe es bien definido y tortuoso (propio de cualquier curso de agua que desciende de una zona pedregosa). Por ser un río que es alimentado por numerosas vertientes, su volumen de agua varía a lo largo del año. En la temporada
+                    invernal su cauce se reduce a un pequeño e insignificante curso de agua que apenas alcanza para sostener la vida de algunos anfibios, peces y plantas, mientras que en temporada estival, sus repentinas crecidas o riadas, pueden alcanzar
+                    alturas de hasta 10 metros en la región denominada Juntura de los Ríos, que es donde se une al Río San Francisco, para formar el río Cosquín. Esto lo lleva a ser un río de características torrentosas. No es un río de características
+                    navegables, y a lo largo de su recorrido, posee sectores arenosos en los que algunos turistas encuentran un sitio para descansar. No es un río que reciba gran volumen de turistas. El acceso a sus márgenes es relativamente sencillo
+                    hacerlo desde su desembocadura, pero luego de algunos kilómetros al oeste ascendiendo hacia las Altas Cumbres de las Sierras Grandes, se torna muy dificultoso acceder a él por caminos de montaña ya que discurre allí por una quebrada
+                    (especie de cañón de medianas proporciones), ya que los mismos son todos de grava y en algunos sectores es necesario el uso de vehículos de tracción integral para acceder a él. Aproximadamente 10 km de recorrido total discontinuos,
+                    con desniveles moderados y varios cruce de arroyos, para disfrutar de las playitas de arena, los laberintos de piedra y sus hermosas ollas. En esta época es posible gozar de las cortaderas florecidas y los colores otoñales de los diferentes
+                    árboles; hermosa época para disfrutar. Almuerzo y merienda a la vera del arroyo.
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide yuspe-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide yuspe-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide yuspe-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+                    <!--
+                    <div class="day-conteiner">
+                        <h4>Viernes</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i>Salida desde Córdoba</li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Sabado</h4>
+                        <ul>
+                            <li><i class="fas fa-truck-monster"></i></i><strong> Excursion en 4x4</strong> <br> Bien temprano, luego de desayunar, salimos hacía el balcón del pissis y sus lagunas en camionetas adaptadas, con un guía por cada vehiculo.
+                                <br> Vamos a ver el
+                                <strong>Volcan Pissis</strong> y, en su base, las <strong>Lagunas Turquesa, Verde y Negra</strong>, todas desde la misma ubicación</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking (opcional)</strong><br> Al regreso haremos un pequeño trek por el cañón del indio. <br> Retorno al atardecer para cenar y descansar
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Domingo</h4>
+                        <ul>
+                            <li><i class="fas fa-car-side"></i><strong>Visitamos las termas</strong><br> Luego del desayuno visitaremos las termas dónde disfrutaremos medio día sus <strong>aguas termales</strong></li>
+                            <li><i class="fas fa-bus"></i><strong> Retorno a Córdoba</strong></li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>Media/Baja</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: (dia?) 7:30 hs AM</p>
+                <p>Regreso: (dia?) 20:30 hs PM aprox.</p>
+                <p>Lugar de partida y regreso: Plaza Velez Sarsfield (Frente Patio Olmos)</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Mochila chica</li>
+                    <li>Ropa cómoda para caminar</li>
+                    <li>Zapatillas con buen agarre</li>
+                    <li>1 Par de medias extra</li>
+                    <li>Protector solar</li>
+                    <li> 1 Muda de ropa extra ( ya que haremos canyoning/barranquismo )</li>
+                    <li>Toallon</li>
+                    <li>Rompeviento</li>
+                    <li>Gorra y Lentes</li>
+                    <li>Equipo mate (quien lo deseé)</li>
+                    <li>Protector solar</li>
+                    <li>Abrigo</li>
+                    <li>Comida de marcha, snacks y 2 litros de agua mínimo </li>
+                    <li>Una bolsa de consorcio</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>

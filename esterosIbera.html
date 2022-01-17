@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivak Aventuras - Esteros del Iberá</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/c5d069ea81.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" alt="Vivak"></a>
+        </div>
+        <div class="menu-opener"><img src="assets/iconos/menu.png" alt="Menu"></div>
+        <div class="menu hidden scale-in-ver-top">
+            <ul>
+                <a href="index.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="#viajes">
+                    <li>Viajes</li>
+                </a>
+
+                <a href="#contacto">
+                    <li>Contacto</li>
+                </a>
+                <div class="close-menu">
+                    <i class="fas fa-chevron-up"></i>
+                </div>
+
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="trip-presentation">
+            <div>
+                <h1>Esteros del Iberá<br><span>Aventura y safari por agura</span> </h1>
+                <div class="flex"> <button onclick="toggleDescription()" class="descBtn"><i class="fas fa-chevron-down toggle"></i><i class="fas fa-chevron-up toggle hidden"></i>Descripción <i class="fas fa-chevron-up toggle hidden"></i><i class="fas fa-chevron-down toggle"></i></button></div>
+
+                <p class="toggle hidden">Los Esteros del Iberá constituyen uno de los humedales más importantes del mundo, el segundo más grande de Sudamérica. Con una superficie de 1.300.000 hectáreas, la Reserva Natural del Iberá ocupa el 14% de la provincia de Corrientes.
+                    Es un auténtico santuario natural donde se puede disfrutar de la cercanía y de la mansedumbre de los animales dentro de su mismo hábitat sin molestarlos. Este paraíso único es uno de los humedales más importantes del mundo no solo
+                    por su biodiversidad de seres vivos que habitan allí, sino por ser uno de los reservorios de agua dulce más significativos del planeta. Por eso, el 18 de enero de 2002 fue catalogado como ¨Humedal de importancia Internacional¨ por
+                    la convención RAMSAR. <br> <br> SAFARI NAUTICO y KAYAK <br> Salir temprano de la Posada, dirigirse al muelle y embarcarse en una aventura por lugares inolvidables. impenetrables desde tierra firme. Una vez adentrados en el enigmático
+                    Iberá, entre riachos y vegetación acuática, nos encontraremos con los verdaderos huéspedes de los Esteros. Todos ellos conviven armoniosamente: carpinchos, ciervos de los pantanos, lobitos de río, yacarés overos y negros, y una gran
+                    variedad de aves acuáticas. Lo invitamos a una aventura sola apta para valientes y para amantes de la naturaleza. Una aventura correntina, vivida desde el corazón de los Esteros <br><br> CAMINATA <br> Queremos que puedan conocer la
+                    fauna silvestre en su propio hábitat, en diferentes lugares y momentos del día. Siempre viéndolos de cerca, pero sin molestarlos. Estamos convencidos de que una caminata es fundamental para conocer a fondo los Esteros. Sea a la mañana
+                    o de tarde, siempre estaremos listos para partir. La programación de las salidas está organizada exclusivamente por nuestro Coordinador y Guía, de acuerdo a la temporada, a las condiciones climáticas y al horario establecido en cada
+                    zona por las autoridades "Ibera Reserva Natural".
+                </p>
+
+
+            </div>
+        </div>
+        <!--SLIDER -->
+        <div class="slider-container">
+            <div class="dots">
+                <label for="slide-dot-1"></label>
+                <label for="slide-dot-2"></label>
+                <label for="slide-dot-3"></label>
+            </div>
+
+            <input id="slide-dot-1" type="radio" name="slides" checked>
+            <div class="slide esteros-1"></div>
+
+            <input id="slide-dot-2" type="radio" name="slides">
+            <div class="slide esteros-2"></div>
+
+            <input id="slide-dot-3" type="radio" name="slides">
+            <div class="slide esteros-3"></div>
+        </div>
+        <!--informacion general-->
+        <div class="trip-info">
+            <div class="programa">
+
+                <h3>Programa</h3>
+                <div class="activities-conteiner">
+
+                    <div class="day-conteiner">
+                        <h4>Día 1</h4>
+                        <ul>
+                            <li><i class="fas fa-bus"></i><strong> Salida desde Córdoba</strong><br> Partimos desde Córdoba Capital, llegamos a Los Esteros a las 15 hs aproximadamente</li>
+                            <li><i class="fas fa-hiking"></i><strong> Trekking Nocturno</strong><br> Luego de instalarnos realizaremos una caminata nocturna en Parque Nacional Ibera, al regresar cenaremos en restaurante y a descansar. </li>
+                        </ul>
+                    </div>
+
+                    <div class="day-conteiner">
+                        <h4>Día 2</h4>
+                        <ul>
+                            <li><i class="fas fa-ship"></i><strong> Safari</strong><br> Luego del desayuno, realizaremos un safari naútico en lancha por la laguna viendo su fauna como nunca se ve, en estado puro y al alcance de la mano</li>
+                            <li><i class="fas fa-swimming-pool"></i><strong> Almuerzo en la hosteleria</strong><br> Regresamos para almorzar y relajarnos en la pileta de la hostería</li>
+                            <li><i class="fas fa-hiking"></i><strong> Caminata y Kayak por Reserva Privada</strong><br> mas entrada la tarde realizaremos una caminata y kayak por un Reserva Privada , exclusivamente reservada solo para nosotros, regresamos
+                                para la cena en restaurante.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="day-conteiner">
+                        <h4>Día 3</h4>
+                        <ul>
+                            <li><i class="fas fa-hiking"></i><strong>Trekking por el Parque Provincial del Iberá</strong><br> Luego del desayuno , iremos hasta el Parque provincial Iberá donde realizaremos una caminata por senderos del Monte, Caraya y del
+                                Centro
+                            </li>
+                            <li><i class="fas fa-bus"></i><strong> Retorno a Córdoba</strong><br> Inciamos el retorno hacia Córdoba</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dificultad">
+                <h3>Exigencia física</h3>
+                <p>XXX</p>
+            </div>
+            <div class="horarios">
+                <h3>Horarios</h3>
+                <p>Salida: XXX</p>
+                <p>Regreso: XXX</p>
+            </div>
+            <div class="incluye">
+                <h3>Incluye</h3>
+                <ul>
+                    <li>Traslado ida y vuelta ( 2.000 km)</li>
+                    <li>4 excursiones</li>
+                    <li>Posada con habitaciones a compartir( con agua caliente, pileta y ropa blanca )</li>
+                    <li>Pensión completa ( no incluye bebidas)</li>
+                    <li>Seguro de vida</li>
+                    <li>Guía habilitado por la Provincia de Córdoba</li>
+                    <li>Botiquin de primeros auxilios ( no incluye medicamentos personales )</li>
+                </ul>
+            </div>
+            <div class="equipo">
+                <h3>Equipo sugerido</h3>
+                <ul>
+                    <li>Almuerzo para el viaje de ida</li>
+                    <li>Mochila mediana</li>
+                    <li>Ropa cómoda para caminar y viajar</li>
+                    <li>Zapatillas</li>
+                    <li>Rompeviento</li>
+                    <li>Campera o polar</li>
+                    <li>2 Par de medias extra</li>
+                    <li>Protector solar</li>
+                    <li>Rompeviento</li>
+                    <li>Gorra y Lentes de sol ( impresindible )</li>
+                    <li>Equipo mate ( quien lo deseé )</li>
+                    <li>Comida de marcha, snacks y agua</li>
+                    <li>Elementos higiene personal</li>
+                    <li>Medicación personal (si alguien la necesitara)</li>
+                </ul>
+            </div>
+
+        </div>
+    </main>
+    <footer id="contacto">
+        <div class="contactos">
+            <div>
+                <h3>Contacto</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-whatsapp-square"></i><span>+54 351356192603 - Marina Mercado</span></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fas fa-envelope-square"></i><span>marinasilviamercado@gmail.com</span></div>
+                </div>
+            </div>
+
+            <div>
+                <h3>Redes Sociales</h3>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-instagram-square"></i><span>vivak.aventuras</span>
+                        <!--<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+                <div>
+                    <div class="contact-wrapper"><i class="fab fa-facebook-square"></i><span>Vivak Aventuras</span>
+                        <!---<i class="far fa-hand-pointer"></i>---></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright"> COPYRIGHT 2021 VIVAK. TODOS LOS DERECHOS RESERVADOS </div>
+    </footer>
+    <script src="./scipts/index.js"></script>
+</body>
+
+</html>
+
+</html>
