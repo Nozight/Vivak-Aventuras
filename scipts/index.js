@@ -1,3 +1,12 @@
+//MENU 
+// const menu = document.querySelector(".menu");
+// const menuOpener = document.querySelector(".menu-opener");
+
+// function showHide() {
+//     menu.classList.toggle()
+// }
+// menuOpener.addEventListener("click", showHide())
+
 //SLIDESHOW 
 var slideIndex = 1;
 showDivs(slideIndex);
