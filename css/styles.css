@@ -402,7 +402,7 @@ img {
   justify-content: space-between;
 }
 .destinos .cards-conteiner .card .card-info h3 {
-  margin: 0;
+  margin: 0 0 5px 0;
 }
 .destinos .cards-conteiner .card .card-info a {
   align-self: flex-end;
@@ -435,84 +435,99 @@ img {
   flex: 1 1 160px;
 }
 
-#balcon-1 {
+.sesenta {
   width: 60%;
-  background: center url(../assets/destinos/balcon-pissis/1.jpeg) no-repeat;
+}
+
+.veinte {
+  width: 20%;
+}
+
+.balcon-1 {
+  background: center url(../assets/destinos/balcon-pissis/4.jpeg) no-repeat;
   background-size: cover;
   z-index: 4;
 }
 
-#balcon-2 {
-  width: 20%;
+.balcon-2 {
   background: center url(../assets/destinos/balcon-pissis/2.jpeg) no-repeat;
   background-size: cover;
   z-index: 3;
 }
 
-#balcon-3 {
-  width: 20%;
+.balcon-3 {
   background: center url(../assets/destinos/balcon-pissis/3.jpeg) no-repeat;
   background-size: cover;
 }
 
-#talampaya-1 {
+.talampaya-1 {
   width: 60%;
   background: center url(../assets/destinos/talampaya/1.jpeg) no-repeat;
   background-size: cover;
   z-index: 4;
 }
 
-#talampaya-2 {
-  width: 20%;
+.talampaya-2 {
   background: center url(../assets/destinos/talampaya/2.jpeg) no-repeat;
   background-size: cover;
   z-index: 3;
 }
 
-#talampaya-3 {
-  width: 20%;
+.talampaya-3 {
   background: center url(../assets/destinos/talampaya/4.jpeg) no-repeat;
   background-size: cover;
   z-index: 2;
 }
 
-#yungas-1 {
-  width: 60%;
+.yungas-1 {
   background: center url(../assets/destinos/yungas/1.jpeg) no-repeat;
   background-size: cover;
   z-index: 4;
 }
 
-#yungas-2 {
-  width: 20%;
+.yungas-2 {
   background: center url(../assets/destinos/yungas/2.jpeg) no-repeat;
   background-size: cover;
   z-index: 3;
 }
 
-#yungas-3 {
-  width: 20%;
+.yungas-3 {
   background: center url(../assets/destinos/yungas/3.jpeg) no-repeat;
   background-size: cover;
   z-index: 2;
 }
 
-#taton-1 {
-  width: 60%;
+.rioYuspe-1 {
   background: center url(../assets/destinos/dunas-taton/1.jpeg) no-repeat;
   background-size: cover;
   z-index: 4;
 }
 
-#taton-2 {
-  width: 20%;
+.rioYuspe-2 {
   background: center url(../assets/destinos/dunas-taton/2.jpeg) no-repeat;
   background-size: cover;
   z-index: 3;
 }
 
-#taton-3 {
-  width: 20%;
+.rioYuspe-3 {
+  background: center url(../assets/destinos/dunas-taton/3.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+
+.esteros-1 {
+  background: center url(../assets/destinos/dunas-taton/1.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 4;
+}
+
+.esteros-2 {
+  background: center url(../assets/destinos/dunas-taton/2.jpeg) no-repeat;
+  background-size: cover;
+  z-index: 3;
+}
+
+.esteros-3 {
   background: center url(../assets/destinos/dunas-taton/3.jpeg) no-repeat;
   background-size: cover;
   z-index: 2;
