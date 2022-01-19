@@ -19,6 +19,12 @@ img {
     text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+    .slider-container {
+        height: 500px;
+    }
+}
+
 .dots {
     position: absolute;
     left: 0;
